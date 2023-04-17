@@ -14,7 +14,8 @@ class Graph():
 		for node in range(self.V):
 			# print(node, "\t\t", dist[node], "\n")
 			temp.append(dist[node])
-		print(temp.sort())
+		temp.sort()
+		print(temp)
 		for i in range(10):
 			print(temp[i*2]+"   "+temp[i*2+1])
 
