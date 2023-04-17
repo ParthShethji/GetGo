@@ -10,8 +10,11 @@ class Graph():
 
 	def printSolution(self, dist):
 		print("Vertex \t Distance from Source")
+		temp=[]
 		for node in range(self.V):
-			print(node, "\t\t", dist[node], "\n")
+			# print(node, "\t\t", dist[node], "\n")
+			temp.append(dist[node])
+		print(temp)
 
 	def minDistance(self, dist, sptSet):
 
