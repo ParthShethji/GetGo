@@ -2,7 +2,8 @@ const path = require("path")
 const express = require("express")
 const app = express();
 
-
+const publicPath = path.resolve(__dirname, "./public");
+app.use(express.static(publicPath));
 
 app.set('view engine', 'hbs')
 const templatesPath = path.join(__dirname, "./templates/views")
@@ -31,6 +32,6 @@ app.get('/myform', function (req, res) {
 
 });
 
-app.listen(5000, () => {
+app.listen(9000, () => {
     console.log("hello world")
 })
