@@ -1,24 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nearest hospital</title>
-  </head>
-  <body>
-    <h1>hello</h1>
-    <form action="/myform" method="GET">
-      <input type="text" name="mytext" required />
-      <input type="submit" value="Submit" id="a"/>
-    </form>
-    <br>
-    <br>
-    <div id="res">the location you selected is {{post.location}}</div>
-    <br>
-    <br>
-    <br>
-    <div id="res">the data for  location you selected is {{post.Data}}</div>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>GetGo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet", type="text/css", href="/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">GetGo</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto"><img src="/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+      </nav><!-- .navbar -->
+
+      <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Contact</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to GetGo</h1>
+      <h2>Know your nearest Hospital</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Select your location</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">call Ambulance</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Perform First aid</a></h4>
+              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <br><br>
+          <div class="map">
+        <div class="area" style="top: 38%; left: 14%;">
+          <span class="marker"></span>
+          <h3>Kothrud</h3>
+        </div>
+        <div class="area" style="top: 20%; left: 34.5%;">
+          <span class="marker"></span>
+          <h3>Swargate</h3>
+        </div>
+        <div class="area" style="top: 40.5%; left: 79.5%;">
+          <span class="marker"></span>
+          <h3>MagarPatta</h3>
+        </div>
+        <div class="area" style="top: 84.5%; left: 52%;">
+          <span class="marker"></span>
+          <h3>Katraj</h3>
+        </div>
+        <div class="location" style="top: 40%; left: 20%;">
+          <span class="marker"></span>
+          <h3>Hospital 1</h3>
+        </div>
+        <div class="location" style="top: 40%; left: 40%;">
+          <span class="marker"></span>
+          <h3>Hospital 2</h3>
+        </div>
+        <div class="location" style="top: 30%; left: 70%;">
+          <span class="marker"></span>
+          <h3>Hospital 3</h3>
+        </div>
+        <div class="location" style="top: 70%; left: 75%;">
+          <span class="marker"></span>
+          <h3>Hospital 4</h3>
+        </div>
+        <div class="location" style="top: 84%; left: 61%;">
+          <span class="marker"></span>
+          <h3>Hospital 5</h3>
+        </div>
+        <div class="location" style="top: 70%; left: 25%;">
+          <span class="marker"></span>
+          <h3>Hospital 6</h3>
+        </div>
+    </div>
+          <div class="container">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>Enter your Location</span>
+                    <span></span>
+                  </div>
+
+                  <div class="app-contact">10 units is 1 km</div>
+                </div>
+                <div class="screen-body-item">
+                  <form action="/myform" method="GET">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" name="mytext" placeholder="LOCATION" required id='b'>
+                      </div>
+                      <div class="app-form-group message">
+                        <span class="app-form-control" id='c'>-</span>
+                      </div>
+                      <div class="app-form-group message">
+                        <span class="app-form-control" id="a">{{post.location}}   {{post.Data}}</span>
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button type="submit" value="submit" class="app-form-button" id="mybutton">SEND</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are some emergency steps you can take if first aid is required until the ambulance arrives. The following are some of the most common questions asked. Follow these steps correctly if done wrongly they can be proven harmfull.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What to do when someone is having a heart attack? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                 Have the person sit down, rest, and try to keep calm.
+Loosen any tight clothing.
+Ask if the person takes any chest pain medicine, such as nitroglycerin for a known heart condition, and help them take it.
+If the pain does not go away promptly with rest or within 3 minutes of taking nitroglycerin, call for emergency medical help.
+If the person is unconscious and unresponsive, call 911 or the local emergency number, then begin CPR.
+If an infant or child is unconscious and unresponsive, perform 1 minute of CPR, then call 911 or the local emergency number.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What should I do if someone is choking? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If a choking victim becomes unconscious, you must perform Cardiopulmonary Resuscitation to save the person’s life.  If the person is conscious but cannot speak or cough, begin the Heimlich Maneuver, a system of abdominal thrusts that clears the throat.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What to Do If Someone's Bleeding Badly ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Giving first aid depends on what the person's major problems are. If they are not breathing, then CPR or chest compressions would be more important than the bleeding. If they are breathing fine and do not have any other major injuries, or the bleeding is the major injury, then direct pressure should be applied directly to the wound. This pressure will help the wound stop bleeding or at least slow down.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What Should You Do If You're Bitten by a Venomous Snake? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Keep the victim calm, restrict movement. 
+Assure the victim and do not let him panic. When under panic, it will enhance heart rate and would circulate the venom faster in the body. 
+Remove any rings or constricting items; the affected area may swell. 
+Stop lymphatic spread of venom - bandage firmly, splint and immobilise.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"> How to Perform First Aid When Someone is Unconscious? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If a person is unconsxious, it is important to call or tell someone to call 911 or the local emergency number. Check the person's airway, breathing, and pulse frequently and begin CPR if necessary. If the person is breathing and lying on their back, carefully roll them toward you onto their side to prevent any further pain or damage
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>GetGo</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Parth Shethji, Dhiraj Patil, Mayur Patil, Richa Mahajan, Vaishanvi Petkar</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+      <script>
+      const phoneCallBtn = document.getElementById('mybutton');
+      phoneCallBtn.addEventListener('click', async () => { 
+        try { 
+        const response = await fetch('/phone-call', { method: 'POST' });}
+      catch (error) {
+      console.error(error); } });
+    </script>
+</script>
+</body>
+
 </html>
