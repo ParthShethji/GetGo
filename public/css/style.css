@@ -1814,7 +1814,7 @@ section {
 
 .app-contact {
   margin-top: auto;
-  font-size: 8px;
+  font-size: 14px;
   color: #888;
 }
 
@@ -1824,6 +1824,10 @@ section {
 
 .app-form-group.message {
   margin-top: 40px;
+}
+
+#a{
+  margin-left: -480px;
 }
 
 .app-form-group.buttons {
@@ -1920,4 +1924,54 @@ section {
   .screen-body-item {
     padding: 0;
   }
+}
+
+
+.map {
+  position: relative;
+  height: 500px;
+  background-image: url("https://lh3.googleusercontent.com/-bQzIWFMAYus/WXy3WDcphBI/AAAAAAAAAMs/unOi6HiEoi4VWaM0WiP5q32q9zDbIhUvwCLcBGAs/w1200-h630-p-k-no-nu/7-29-2017%2B11-14-59%2BAM.jpg")
+}
+
+.location {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 10px;
+}
+
+.marker {
+  position: relative;
+  padding-left: 20px;
+}
+
+.marker::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url('pin.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.area{
+  color: rgb(119, 106, 228);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
 }

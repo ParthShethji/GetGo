@@ -9,7 +9,7 @@ class Graph():
 					for row in range(vertices)]
 
 	def printSolution(self, dist):
-		print("Vertex \t Distance from Source")
+		print("Array of nearest Hospital Distances\t")
 		temp=[]
 		for node in range(self.V):
 			# print(node, "\t\t", dist[node], "\n")
@@ -71,9 +71,13 @@ g.graph = [[0, 0, 0, 0, 20, 10, 0, 0, 0, 0],
     ]
 
 if sys.argv[1] == "katraj":
-	g.dijkstra(1)
+	g.dijkstra(4)
 elif sys.argv[1] == "swargate":
 	g.dijkstra(2)
+elif sys.argv[1] == "magarpatta":
+	g.dijkstra(3)
+elif sys.argv[1] == "kothrud":
+	g.dijkstra(1)
 
 
 

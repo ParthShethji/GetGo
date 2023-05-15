@@ -15,6 +15,7 @@ app.get("", (req, res) => {
 })
 
 app.get('/myform', function (req, res) {
+
     var myText = req.query.mytext;
 
     var spawn = require("child_process").spawn;
@@ -32,6 +33,29 @@ app.get('/myform', function (req, res) {
 
 });
 
-app.listen(9000, () => {
+function makePhoneCall() {
+    var accountSid = 'AC88af0f97c420651c780cd138bbc6fcbf';
+    var authToken = 'a6803b35d2438e6bb3f63c31864d52f8';
+    var client = require('twilio')(accountSid, authToken);
+  
+    client.calls.create({
+      url: 'http://demo.twilio.com/docs/voice.xml',
+      to: '+919422755571',
+      from: '+16073176923'
+    }, function call(err, call) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(call.sid);
+      }
+    });
+}
+
+app.post('/phone-call', (req, res) => {
+makePhoneCall();
+console.log('Phone call initiated!');
+});
+
+app.listen(9400, () => {
     console.log("hello world")
 })
