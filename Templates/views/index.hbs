@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>GetGo</title>
+  <title>NearestCare</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,7 +39,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">GetGo</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">NearestCare</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo me-auto"><img src="/img/logo.png" alt="" class="img-fluid"></a>
 
@@ -50,7 +50,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
       </nav><!-- .navbar -->
 
-      <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Contact</a>
+      {{!-- <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Contact</a> --}}
 
     </div>
   </header><!-- End Header -->
@@ -58,7 +58,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>Welcome to GetGo</h1>
+      <h1>Welcome to NearestCare</h1>
       <h2>Know your nearest Hospital</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
@@ -93,10 +93,8 @@
               <h4 class="title"><a href="">Perform First aid</a></h4>
               <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
             </div>
-
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -104,10 +102,9 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
-
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Efficiently connecting you to the nearest hospital with swift ambulance dispatch for urgent medical assistance. Accessible and reliable hospital connectivity paired with immediate ambulance response for prompt medical care.</p>
           <br><br>
           <div class="map">
         <div class="area" style="top: 38%; left: 14%;">
@@ -171,7 +168,6 @@
                     <span>Enter your Location</span>
                     <span></span>
                   </div>
-
                   <div class="app-contact">10 units is 1 km</div>
                 </div>
                 <div class="screen-body-item">
@@ -196,9 +192,6 @@
             </div>
         </div>
         </div>
-
-        
-
       </div>
     </section><!-- End Services Section -->
 
@@ -211,7 +204,6 @@
           <h2>Frequently Asked Questions</h2>
           <p>Here are some emergency steps you can take if first aid is required until the ambulance arrives. The following are some of the most common questions asked. Follow these steps correctly if done wrongly they can be proven harmfull.</p>
         </div>
-
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
@@ -252,8 +244,7 @@ If an infant or child is unconscious and unresponsive, perform 1 minute of CPR, 
                 <p>
                   Keep the victim calm, restrict movement. 
 Assure the victim and do not let him panic. When under panic, it will enhance heart rate and would circulate the venom faster in the body. 
-Remove any rings or constricting items; the affected area may swell. 
-Stop lymphatic spread of venom - bandage firmly, splint and immobilise.
+Remove any rings or constricting items; the affected area may swell. Stop lymphatic spread of venom - bandage firmly, splint and immobilise.
                 </p>
               </div>
             </li>
@@ -280,10 +271,10 @@ Stop lymphatic spread of venom - bandage firmly, splint and immobilise.
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>GetGo</span></strong>. All Rights Reserved
+           <p style="margin-left: 500px">Copyright <strong><span>GetGo</span></strong>. All Rights Reserved</p>
         </div>
         <div class="credits">
-          Designed by Parth Shethji, Dhiraj Patil, Mayur Patil, Richa Mahajan, Vaishanvi Petkar</a>
+          <p style="margin-left: 470px">Designed by Parth Shethji, Mayur Patil, Dhiraj Pawar</p>
         </div>
       </div>
     </div>
@@ -295,7 +286,8 @@ Stop lymphatic spread of venom - bandage firmly, splint and immobilise.
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>
-      <script>
+    <script>
+
       const phoneCallBtn = document.getElementById('mybutton');
       phoneCallBtn.addEventListener('click', async () => { 
         try { 
@@ -303,7 +295,6 @@ Stop lymphatic spread of venom - bandage firmly, splint and immobilise.
       catch (error) {
       console.error(error); } });
     </script>
-</script>
 </body>
 
 </html>

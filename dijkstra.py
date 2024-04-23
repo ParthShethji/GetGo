@@ -11,13 +11,15 @@ class Graph():
 	def printSolution(self, dist):
 		print("Array of nearest Hospital Distances\t")
 		temp=[]
+		ans=[]
 		for node in range(self.V):
 			# print(node, "\t\t", dist[node], "\n")
 			temp.append(dist[node])
 		temp.sort()
 		print(temp)
 		for i in range(10):
-			print(temp[i*2]+"   "+temp[i*2+1])
+			ans.append(temp[i*2]+"   "+temp[i*2+1])
+		print(ans[-6:])
 
 	def minDistance(self, dist, sptSet):
 
