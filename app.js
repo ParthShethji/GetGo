@@ -34,8 +34,8 @@ app.get('/myform', function (req, res) {
 });
 
 function makePhoneCall() {
-    var accountSid = 'AC88af0f97c420651c780cd138bbc6fcbf';
-    var authToken = 'a6803b35d2438e6bb3f63c31864d52f8';
+    var accountSid = '';
+    var authToken = '';
     var client = require('twilio')(accountSid, authToken);
   
     client.calls.create({
